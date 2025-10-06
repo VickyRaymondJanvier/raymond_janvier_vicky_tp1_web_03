@@ -20,12 +20,12 @@
   <body>
     <div class="container bg-white">
       <!-- Section  -->
-      <header class="section-hero d-flex align-items-end p-4">
+      <header class="section-hero d-flex align-items-end p-4 p-md-2">
         <h1 class="titre-hero text-white">Le Voyage de Chihiro</h1>
       </header>
 
       <!-- Contenu Principal -->
-      <main class="section-contenu p-5">
+      <main class="section-contenu p-5 p-md-2">
         <!-- Introduction -->
         <h2 class="titre-section pb-1 mb-2 mt-4">Synopsis</h2>
         <p class="texte-critique fs-5">
@@ -135,11 +135,83 @@
           </aside>
         </section>
       </main>
-      <footer>
-        <p class="footer text-center ">
+      <footer class="d-flex flex-column justify-content-center p-5">
+        <p class="footer text-center">
           Critique faite pas Vicky Raymond-Janvier
           <i class="bi bi-door-open"></i>
         </p>
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="btn btn-dark text-white -center"
+          data-bs-toggle="modal"
+          data-bs-target="#voir-plus"
+        >
+          Voir plus!
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="voir-plus"
+          tabindex="-1"
+          aria-labelledby="voir-plusLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Entête -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="voir-plusLabel">Wikipedia :</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <!-- Corps -->
+              <div class="modal-body">
+                <a href="https://fr.wikipedia.org/wiki/Le_Voyage_de_Chihiro"
+                  >Wikipedia du film!</a
+                ><br />
+
+                <a href="https://fr.wikipedia.org/wiki/Studio_Ghibli"
+                  >Wikipedia du Studio Ghibli!</a
+                >
+              </div>
+              <!-- Pied -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-info"
+                  data-bs-dismiss="modal"
+                >
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div
+            class="toast show"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <strong class="me-auto">Message de l'autrice 0-0</strong>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body">Merci pour votre lecture!</div>
+          </div>
+        </div>
       </footer>
     </div>
 

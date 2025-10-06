@@ -162,17 +162,11 @@ body {
     font-size: 2rem;
   }
 
-  .section-contenu {
-    padding: 30px 20px;
-  }
-
   .section-hero {
     height: 300px;
-    padding: 20px;
   }
 
   .nombre-note {
     font-size: 3rem;
   }
-
 }
