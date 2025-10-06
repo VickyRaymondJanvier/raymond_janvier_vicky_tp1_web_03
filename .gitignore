@@ -1,0 +1,6 @@
+# Dépendances npm
+node_modules/
+
+# Vscode
+.vscode
+coverage/
