@@ -6,7 +6,7 @@
     <title>Le Voyage de Chihiro - Critique</title>
 
     <link
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
       rel="stylesheet"
     />
     <link
@@ -19,13 +19,13 @@
   </head>
   <body>
     <div class="container bg-white">
-      <!-- Section Hero -->
-      <div class="section-hero d-flex align-items-end p-4">
+      <!-- Section  -->
+      <header class="section-hero d-flex align-items-end p-4">
         <h1 class="titre-hero text-white">Le Voyage de Chihiro</h1>
-      </div>
+      </header>
 
       <!-- Contenu Principal -->
-      <div class="section-contenu p-5">
+      <main class="section-contenu p-5">
         <!-- Introduction -->
         <h2 class="titre-section pb-1 mb-2 mt-4">Synopsis</h2>
         <p class="texte-critique fs-5">
@@ -37,16 +37,16 @@
         </p>
 
         <!-- Colonnes -->
-        <div class="row">
-          <div class="colonne-gauche col-6 d-flex flex-column">
+        <section class="row">
+          <aside class="colonne-gauche col-6 d-flex flex-column">
             <h2 class="titre-section">Ma critique</h2>
             <div class="boite-notation p-3">
               <div class="nombre-note">87/100</div>
             </div>
-          </div>
+          </aside>
 
           <!-- Infos film-->
-          <div class="colonne-droite col-6">
+          <aside class="colonne-droite col-6">
             <h2 class="titre-section">Informations du film</h2>
             <table class="table table-striped table-bordered">
               <tbody>
@@ -92,8 +92,8 @@
                 </tr>
               </tbody>
             </table>
-          </div>
-        </div>
+          </aside>
+        </section>
 
         <!-- Mon avis -->
         <h2 class="titre-section">Mon avis</h2>
@@ -108,8 +108,8 @@
         </p>
 
         <!-- Points Forts et Faibles -->
-        <div class="points-positifs-negatifs d-grid">
-          <div class="points-positifs pt-2 px-2">
+        <section class="points-positifs-negatifs d-grid">
+          <aside class="points-positifs pt-2 px-2">
             <h3>Points Positifs</h3>
             <ul>
               <li>Style d'animation utilisé lui donne un esthétique unique</li>
@@ -118,9 +118,9 @@
               <li>Histoire consistante tout au long du film</li>
               <li>Les messages sont profonds et bien amenés</li>
             </ul>
-          </div>
+          </aside>
 
-          <div class="points-negatifs pt-2 px-2">
+          <aside class="points-negatifs pt-2 px-2">
             <h3>Points Négatifs</h3>
             <ul>
               <li>
@@ -132,11 +132,17 @@
                 volontairement, ce qui peut être frustrant
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </aside>
+        </section>
+      </main>
+      <footer>
+        <p class="footer text-center ">
+          Critique faite pas Vicky Raymond-Janvier
+          <i class="bi bi-door-open"></i>
+        </p>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+  </body>
 </html>
